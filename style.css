@@ -1,0 +1,176 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    color: #333;
+    font-size: 18px;
+}
+
+header {
+    background: linear-gradient(90deg, #a9f0ec, #096b6e);
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    overflow: visible;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 5px 20px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.2);
+    color: #585858;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border:3px #333 solid;
+}
+
+.mydata {
+    text-align: left;
+}
+
+main section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main section h2, footer div h2 {
+    text-align: center;
+    color: #26a4a8;  
+}
+
+main section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+.experience, .interests_skills, .courses, .exams{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left; 
+}
+.skills, .interests {
+    text-align: center; 
+}
+
+
+ul li {
+    text-align: left;
+}
+
+.fa-solid {
+    color: #26a4a8;
+    margin-right: 10px;
+}
+
+.contact {
+    background: linear-gradient(90deg, #a9f0ec, #096b6e);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.contact_form {
+    text-align: center;
+}
+footer .contact img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+footer .contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-envelope, .fa-phone, .fa-brands {
+    margin-right: 20px;
+    color: #ffffff; 
+    font-size: 24px;
+}
+.contact_form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px; 
+    background-color: #ebf6f8; 
+    border-radius: 10px; 
+    text-align: left; 
+    color: #333; 
+    box-shadow: 2px 2px 2px rgb(223, 223, 223);
+}
+
+.contact_form h2 {
+    text-align: center; 
+    color: #26a4a8;  
+}
+
+.contact_form label {
+    font-weight: bold; 
+}
+
+.contact_form input, textarea {
+    width: 95%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 2px solid #b2daf5; 
+    border-radius: 5px;
+}
+
+.contact_form textarea {
+    resize: none; 
+    height: 120px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px;
+    background-color: #26a4a8; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #248083;
+}
+
