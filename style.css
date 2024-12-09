@@ -63,6 +63,7 @@ header nav ul li a:hover {
     text-align: left;
 }
 
+
 main section {
     padding: 20px;
     border-bottom: 1px solid #ddd;
@@ -120,11 +121,18 @@ footer .contact a {
     color: white;
 }
 
-.fa-envelope, .fa-phone, .fa-brands {
+.fa-envelope, .fa-phone, .fa-brands{
     margin-right: 20px;
     color: #ffffff; 
     font-size: 24px;
 }
+
+.fa-download {
+    font-size: 18px;
+    margin-right: 5px;
+    color: white;
+}
+
 .contact_form {
     width: 600px;
     margin: 20px auto;
@@ -158,10 +166,11 @@ footer .contact a {
     height: 120px;
 }
 
-button {
+button, button a {
     width: 100%; 
     padding: 10px;
     background-color: #26a4a8; 
+    text-decoration: none;
     color: white; 
     border: none; 
     border-radius: 5px; 
@@ -174,3 +183,6 @@ button:hover {
     background-color: #248083;
 }
 
+button:hover a {
+    background-color: #248083;
+}
