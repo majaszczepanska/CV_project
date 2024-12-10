@@ -1,0 +1,9 @@
+w pliku php.ini
+SMTP = smtp.gmail.com
+smtp_port= 587
+sendmail_path = "C:\xampp\sendmail\sendmail.exe"
+
+w pliku sendmail.ini
+smtp_server=smtp.gmail.com
+smtp_port=587
+smtp_ssl=tls

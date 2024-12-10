@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>         
+            <div class="lang_link">
+                <a href="index_pl.html">PL |</a>
+                <a href="index.html">EN</a>
+            </div>
+            <button class="burger-icon"><i class="fa-solid fa-bars"></i></button>
+            <ul class="list">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#experience">Doświadczenie i edukacja</a></li>
+                <li><a href="#interests_skills">Zainteresowania i umiejętności</a></li>
+                <li><a href="#courses">Kursy</a></li>
+                <li><a href="#exams">Egzaminy</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <img src="photo.png" alt="Moje zdjęcie" class="picture">
+            <div class="mydata">
+                <h1>Maja Szczepańska</h1>
+                <p>Data urodzenia: 13-02-2006</p>
+                <p>Adres: ul. Morcinka, Dąbrowa Górnicza 41-303</p>
+                <p>Email: maja.szczepanska06@gmail.com</p>
+                <button><i class="fa-solid fa-download"></i><a href="cv.pdf" download class="download-btn">Pobierz CV</a></button>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Doświadczenie i Edukacja</h2>
+            <ul class="elist">
+                <li><i class="fa-solid fa-school"></i>Liceum: Technikum nr. 17 w Katowicach (2020 - 2025)</li>
+                <li><i class="fa-solid fa-school"></i>Szkoła Podstawowa: Szkoła Podstawowa nr. 29 w Dąbrowie Górniczej (2012 - 2020)</li>
+            </ul>
+        </section>
+
+        <section id="interests_skills" class="interests_skills">
+            <h2>Zainteresowania i Umiejętności</h2>
+            <div class="interests">
+                <h3>Zainteresowania:</h3>
+                <ul>
+                    <li><i class="fa-solid fa-code"></i>Programowanie</li>
+                    <li><i class="fa-solid fa-bicycle"></i>Sport (rower, pływanie, wędrówki, koszykówka)</li>
+                    <li><i class="fa-solid fa-language"></i>Uczenie się języków</li>
+                    <li><i class="fa-solid fa-gamepad"></i>Gry komputerowe</li>
+                    <li><i class="fa-solid fa-music"></i>Muzyka</li>
+                </ul> 
+            </div>
+            <div class="skills">
+                <h3>Umiejętności:</h3>
+                <ul>
+                    <li><i class="fa-solid fa-file-excel"></i>Znajomość Microsoft Excel</li>
+                    <li><i class="fa-solid fa-code"></i>Podstawowa znajomość języków programowania (Python, C#, C++, PHP)</li>
+                    <li><i class="fa-solid fa-handshake"></i>Odpowiedzialność i zaangażowanie</li>
+                    <li><i class="fa-solid fa-user-plus"></i>Umiejętność pracy samodzielnej i w zespole</li>
+                    <li><i class="fa-solid fa-rainbow"></i>Kreatywność</li>
+                    <li><i class="fa-solid fa-language"></i>Angielski: poziom komunikatywny</li>
+                    <li><i class="fa-solid fa-id-card"></i>Prawo jazdy: B</li>
+                </ul> 
+            </div>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2>Kursy</h2>
+            <ul>
+                <li>09 sty 2021 - IT Essentials: Podstawy sprzętu komputerowego i oprogramowania</li>
+                <li>06 wrz 2021 - CCNAv7: Wprowadzenie do sieci</li>
+                <li>30 wrz 2022 - Partner: PCAP - Podstawy programowania w Pythonie</li>
+                <li>2020 - 2025 - Certyfikat Fujitsu P-Tech rok 1-5</li>
+            </ul>
+        </section>
+
+        <section id="exams" class="exams">
+            <h2>Egzaminy</h2>
+            <ul>
+                <li>Kwalifikacje zawodowe: INF02 100% (technik informatyk)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="contact_form">
+            <h2>Kontakt:</h2>
+            <form action="contact.php" method="post">
+                <label for="fname">Imię:</label>
+                <input type="text" name="fname">
+                <label for="lname">Nazwisko:</label>
+                <input type="text" name="lname">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <label for="message">Wiadomość:</label>
+                <textarea name="message" id="message" row="5"></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+
+        <div id="contact" class="contact">
+            <a href="mailto:maja.szczepanska06@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/maja.szczepanska.52m" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="tel:+48733560158"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://github.com/majaszczepanska"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script>
+        const burger_icon = document.querySelector(".burger-icon");
+        const nav_list = document.querySelector(".list");
+        const nav_links = document.querySelectorAll(".list li a");
+
+        burger_icon.addEventListener('click', () => {
+            nav_list.classList.toggle('show'); 
+        });
+
+        nav_links.forEach(link => {
+            link.addEventListener("click", () => {
+            nav_list.classList.remove("show");
+        });
+        });
+
+    </script>
+</body>
+</html>
