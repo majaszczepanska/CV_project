@@ -4,13 +4,6 @@ $lname = $_POST["lname"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
-$language = 'en';
-if (isset($_POST['lang']) && ($_POST['lang'] == 'pl' || $_POST['lang'] == 'en')) {
-    $language = $_POST['lang']; 
-}
-
-
-
 if (empty($fname) || empty($lname) || empty($email) || empty($message)) {
     header("Location: index.html#contact");
     exit();
