@@ -29,7 +29,7 @@ header nav ul li {
     margin: 5px 20px;
 }
 
-header nav ul li a {
+header nav ul li a, header nav a{
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -41,7 +41,6 @@ header nav ul li a:hover {
     transform: scale(1.2);
     color: #585858;
 }
-
 
 .about {
     display: flex;
@@ -166,7 +165,7 @@ footer .contact a {
     height: 120px;
 }
 
-button, button a {
+.mydata button, .contact_form button, button a {
     width: 100%; 
     padding: 10px;
     background-color: #26a4a8; 
@@ -179,10 +178,92 @@ button, button a {
     transition: background-color 0.3s; 
 }
 
-button:hover {
+.contact_form button:hover {
+    background-color: #248083;
+}
+.mydata button:hover {
+    background-color: #248083;
+}
+.mydata button:hover a {
     background-color: #248083;
 }
 
-button:hover a {
-    background-color: #248083;
+
+@media only screen and (max-width: 767px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .lang_link {
+        display: flex;
+        gap: 5px;
+    }
+    
+    .burger-icon {
+        display: flex;
+        justify-content: right;
+        background: none; 
+        border: none; 
+        padding: 10px; 
+        cursor: pointer; 
+    }
+    
+    .burger-icon i {
+        font-size: 24px;
+        color: white; 
+    }
+    
+    .list {
+        position: absolute;
+        display: none;
+        top: 8.3%; 
+        right: 1px; 
+        flex-direction: column;
+        background-color: rgb(99, 149, 153);
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: auto;
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .list.show {
+        display: flex;
+    }
+    
+    .list li {
+        text-align: right;
+        padding: 10px;
+        color: #ffffff;
+    }
+    
+    .list li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .list li a:hover {
+        color: #26a4a8;
+    }
+
+
+    .contact_form {
+        width: 300px;
+        margin: 20px auto;
+        padding: 20px; 
+    }
 }
+
+    @media only screen and (min-width: 767px) {
+        .burger-icon {
+            display: none;
+        }
+    
+        .list {
+            display: flex;
+        }
+    }
+    
