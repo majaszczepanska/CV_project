@@ -10,8 +10,13 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav>         
+            <div class="lang_link">
+                <a href="index_pl.html">PL |</a>
+                <a href="index.html">EN</a>
+            </div>
+            <button class="burger-icon"><i class="fa-solid fa-bars"></i></button>
+            <ul class="list">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience & Education</a></li>
                 <li><a href="#interests_skills">Interests & Skills</a></li>
@@ -21,6 +26,7 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <section class="about">
             <img src="photo.png" alt="my pic" class="picture">
@@ -105,9 +111,25 @@
         <div id="contact" class="contact">
             <a href="mailto:maja.szczepanska06@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://www.facebook.com/maja.szczepanska.52m" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="tel:+733560158"><i class="fa-solid fa-phone"></i></a>
+            <a href="tel:+48733560158"><i class="fa-solid fa-phone"></i></a>
             <a href="https://github.com/majaszczepanska"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+    <script>
+        const burger_icon = document.querySelector(".burger-icon");
+        const nav_list = document.querySelector(".list");
+        const nav_links = document.querySelectorAll(".list li a");
+
+        burger_icon.addEventListener('click', () => {
+            nav_list.classList.toggle('show'); 
+        });
+
+        nav_links.forEach(link => {
+            link.addEventListener("click", () => {
+            nav_list.classList.remove("show");
+        });
+        });
+
+    </script>
 </body>
 </html>
