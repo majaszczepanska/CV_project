@@ -4,19 +4,26 @@ $lname = $_POST["lname"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
+$language = 'en';
+if (isset($_POST['lang']) && ($_POST['lang'] == 'pl' || $_POST['lang'] == 'en')) {
+    $language = $_POST['lang']; 
+}
+
+
 
 if (empty($fname) || empty($lname) || empty($email) || empty($message)) {
     header("Location: index.html#contact");
     exit();
 } else {
-    $to = "m.szczepanska.283@sltzn.katowice.pl"; 
+    $to = "maja.szczepanska06@gmail.com"; 
     $subject = "New message from $fname $lname";
     $message_mail = "You have received a new message from your website contact form:\n\n" .
                     "Name: $fname $lname\n" .
                     "Email: $email\n\n" .
                     "Message:\n$message";
+    $headers = "From: $email\r\n";
 
-    if (mail($to, $subject, $message_mail)) {
+    if (mail($to, $subject, $message_mail, $headers)) {
         echo "Thank you for your message. It has been sent successfully.";
     } else {
         echo "Sorry, something went wrong. Please try again later.";
