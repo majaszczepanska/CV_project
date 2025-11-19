@@ -58,7 +58,7 @@ Since this project consists entirely of static HTML, CSS, and JavaScript files, 
     Clone the Repository:
     Bash
 
-git clone "https://github.com/majaszczepanska/CV_project.git"
+git clone 
 
 Open in Browser: Navigate to the cloned directory and simply open the index.html file in your preferred web browser.
 Bash
