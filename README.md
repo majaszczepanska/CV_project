@@ -42,7 +42,7 @@ This project is intentionally built with simplicity and core technologies to ens
 
 The repository has a straightforward structure for static website hosting:
 
-.
+
 ├── index.html           # Main English version of the CV
 ├── index_pl.html        # Polish version of the CV
 ├── style.css            # Stylesheet for both language versions
