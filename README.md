@@ -58,7 +58,7 @@ Since this project consists entirely of static HTML, CSS, and JavaScript files, 
     Clone the Repository:
     Bash
 
-git clone https://github.com/majaszczepanska/your-cv-repo.git
+git clone https://github.com/majaszczepanska/CV_project.git
 
 Open in Browser: Navigate to the cloned directory and simply open the index.html file in your preferred web browser.
 Bash
@@ -88,6 +88,6 @@ Channel	Details
 Email	maja.szczepanska06@gmail.com
 GitHub	majaszczepanska
 Facebook	Maja Szczepańska
-LinkedIn / Phone	
+
 
 This portfolio is a project by Maja Szczepańska.
